@@ -27,7 +27,7 @@
   top: 10px;
   left: 760px;
 }
-.bot_below{ 
+.bot_below {
   color: #ffffff;
   font-family: StagSans;
   font-size: 25px;
@@ -35,7 +35,6 @@
   line-height: 284px;
   width: 599px;
   text-align: left;
-  
 }
 
 /* Top left text */
@@ -73,15 +72,17 @@
 
 .flex-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .flex-container > div {
   width: 40vw;
-  margin: 10px;
+  margin: 20px;
+  padding: 20px;
   text-align: center;
-  line-height: 75px;
+  line-height: 70px;
   font-size: 30px;
   background-color: #f9f9ff;
 }
@@ -184,12 +185,89 @@
   outline: 0;
 }
 .text1 {
-    color: #000000;
-    font-family: StagSans;
-    font-size: 15px;
-    font-style: italic;
-    line-height: 30px;
-    width: 300px;
-    text-align: center;
+  color: #000000;
+  font-family: StagSans;
+  font-size: 15px;
+  font-style: italic;
+  line-height: 30px;
+  width: 300px;
+  text-align: center;
+}
+.book {
+  margin-top: -200px;
+}
+.slider__btn--left {
+  left: -10%;
+  transform: translate(-50%, -50%);
+}
 
-  }
+.slider__btn--right {
+  right: 8%;
+  transform: translate(50%, -50%);
+}
+/* .sliderCom {
+  margin-right: 90px;
+  margin-top: -100px;
+  padding: 2%;
+  float: right;
+} */
+#slide1 {
+  transform: translateX(0%);
+  width: 80rem;
+  padding-right: 30%;
+}
+#slide2 {
+  transform: translateX(100%);
+  width: 80rem;
+  padding-left: 1%;
+  padding-right: 10%;
+}
+#slide3 {
+  transform: translateX(200%);
+  width: 80rem;
+  padding-left: 1%;
+  padding-right: 10%;
+}
+.slider {
+  width: 100rem;
+  height: 20rem;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  right: 0%;
+  justify-content: space-between;
+  /* padding: 20px; */
+}
+.card1 {
+  position: absolute;
+  top: 0;
+  left: 15%;
+  width: 100rem;
+  /* right:20%; */
+  height: 14rem;
+  float: left;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  /* padding: 20px; */
+  /* THIS creates the animation! */
+  transition: transform 1s;
+}
+
+.slider__btn {
+  position: relative;
+  bottom: 7.4rem;
+  float: right;
+  border: none;
+  background: rgba(255, 255, 255, 0.7);
+  font-family: inherit;
+  color: #333;
+  border-radius: 50%;
+  height: 1rem;
+  width: -0.5rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+#hide1 {
+  right: 0%;
+}

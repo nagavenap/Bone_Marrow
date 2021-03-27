@@ -53,11 +53,11 @@
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
                         <label class="form-check-label" for="exampleCheck1">Check me out</label>
                       </div> 
-                      <div class="form-group">
+                      <!-- <div class="form-group">
                         <div class="g-recaptcha" data-sitekey="6Les_LUUAA" data-callback="verifyReaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
                         <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
                         <div class="help-block with-errors"></div>
-                        </div>
+                        </div> -->
                       <button type="submit" class="btn btn-danger mt-3">Submit</button>
                     </form>
                   </div>
@@ -104,9 +104,9 @@
     </div>
 </section>
 
-<section class="flex-center">
+<!-- <section class="flex-center">
   <div class="flex-container"> 
-    <div>
+    <div id="image1">
       <div class="agile d-flex m-10  flex-center " style="color: #22B78E;font-family: StagSans;font-size:24px;text-align: center;"> 
         <h2 >Pediatric BMT</h2> 
       </div>
@@ -121,6 +121,7 @@
         </p>
         <button class="btn btn-lg" style="background: radial-gradient( #17EAD9 0%, #6078EA 100%);border-radius: 4px;color: white;text-align: center;padding: 1%;">Know More</button> 
       <hr>
+       
         <img src="images/Bitmap Copy.png" alt="Bitmap_image">
         <p style=" color: #1D5AA6;font-size: 22px;">Dr. Vijay Agarwal</p>
         <p class="agile__milestone__box__description font-green text-center lh-lg mt-1" style="color: #1D5AA6;font-size: 12px;letter-spacing: 1.2px;text-align: center;">MD, MRCP, PhD,CCT<br>
@@ -133,6 +134,7 @@
           <button class="btn btn-lg" style="background: radial-gradient( #17EAD9 0%, #6078EA 100%);border-radius: 4px;color: white;text-align: center;padding: 1%;">Know More</button> 
         </div>
     <div >
+      <div>
       <div class="agile d-flex m-10  flex-center " style="color: #22B78E;font-family: StagSans;font-size:24px;text-align: center;"> 
         <h2 >Adult BMT</h2> 
       </div>
@@ -159,9 +161,18 @@
         <button class="btn btn-lg" style="background: radial-gradient( #17EAD9 0%, #6078EA 100%);border-radius: 4px;color: white;text-align: center;padding: 1%;">Know More</button> 
     </div>
   </div>
+  </div>
+
+</section> -->
+
+<section class="flex-center">
+  <div class="flex-container" id="doctorContent"> 
+    <!-- <div id="doctorContent">
+
+    </div> -->
+  </div>
 
 </section>
-    <!-- agile section end -->
   <!-- types of bone started -->
  <section class="agile d-flex mt-10 m-30 bg-white flex-center">
     <div class="what-are-the-types-o">
@@ -226,9 +237,9 @@
         <p class="card-text">2 or more episodes of pneumonia</p>
       </div>
     </div>
-  </div><br><br>
+  </div><br><br><br>
   <div class="card-deck" style="display: flex;width:80%;height: 70px;flex: start;" >
-    <div class="card" style="top:142px;width:14px;height: 180px;padding: 1%;">
+    <div class="card" style="top:142px;width:14px;height: 180px;padding: 0.5%;">
       <img class="card-img-top" src="images/Group (4).png" alt="Card image cap" style="width: 30px;height: 41px;align-items: center;left:189px;top:2867px;">
       <div class="card-body">
         <p class="card-text">Family history of death of children at young age due to immune deficiency </p>
@@ -270,25 +281,29 @@
     </div>
   </section>
 <br>
+
 <section class="agile d-flex mt-90 m-20 py-60 bg-white flex-center" style="padding-bottom: 0rem !important;">
     <div class="what-are-the-types-o ml-5">
-      <h2 class="q-and-a__text fs-7 fw-550 mr-30"style="color:#1D5AA6;font-family: StagSans;font-size: 22px; letter-spacing: 1.28px;line-height: 40px;text-align: left;">
-        What are the conditions that requireBone Marrow Transplant?
-        <img src="images/Path Copy 5.png" alt="..." class="q-and-a__down-arrow ml-100">
-        </h2>
+      <h2 class="drop1 q-and-a__text fs-7 fw-560 ml-8" style="color:#1D5AA6;font-family: StagSans;font-size: 22px; letter-spacing: 1.28px;line-height: 40px;text-align: left;">
+        What are the conditions that requireBone Marrow Transplant? 
+       <img src="images/Path Copy 5.png" alt="..." id="hide1" onclick="hideContent()" class="q-and-a__down-arrow ml-100">
+      </h2> 
        <hr>
-      <ul style="font-family: StagSans;font-size: 12px;line-height: 39px;width: 1068px;text-align: left;">  
-      <li class="d-flex  align-items-center">
-        <img src="images/double-tick-indicator.png" alt="hospital_image">  
-        <p class="q-and-a__text fs-4 fw-500 mr-30">BMT is the treatment of choice for blood disorders like Thalassemia, Sickle Cell anemia, bone marrow failure syndromes like Aplastic anemia, serious immune deficiencies and 
-          certain  genetic metabolic disorders.</p>  
-      </li>
-      <li class=" d-flex  align-items-center ">
-       <img src="images/double-tick-indicator.png" alt="hospital_image">  
-        <p class="q-and-a__text fs-4 fw-500 ml-2">It is also used to treat high risk cancers like some cases of Acute Lymphoblastic Leukemia, Acute Myeloid Leukemia, Multiple Myeloma and solid tumours like Neuroblastoma, 
-          Ewings Sarcoma and certain relapsed cancers like Lymphomas </p>       
-      </li> 
-    </ul>
+       <div id="content1" >
+        <ul style="font-family: StagSans;font-size: 12px;line-height: 39px;width: 1068px;text-align: left;">  
+          <li class="d-flex  align-items-center">
+            <img src="images/double-tick-indicator.png"  alt="hospital_image">  
+            <p class="q-and-a__text fs-s4 fw-500 mr-30" >BMT is the treatment of choice for blood disorders like Thalassemia, Sickle Cell anemia, bone marrow failure syndromes like Aplastic anemia, serious immune deficiencies and 
+              certain  genetic metabolic disorders.</p>  
+          </li>
+          <li class=" d-flex  align-items-center ">
+           <img src="images/double-tick-indicator.png" alt="hospital_image">  
+            <p class="q-and-a__text fs-4 fw-500 ml-2" >It is also used to treat high risk cancers like some cases of Acute Lymphoblastic Leukemia, Acute Myeloid Leukemia, Multiple Myeloma and solid tumours like Neuroblastoma, 
+              Ewings Sarcoma and certain relapsed cancers like Lymphomas </p>       
+          </li> 
+        </ul>
+       </div>
+     
         <div class="q-and-a d-flex align-items-center mt-10">
           <p class="q-and-a__text fs-7 fw-500 ml-2" style="color: #1D5AA6;font-family: StagSans;font-size: 20px;">Which are the Cancers that may benefit from bone marrow transplants?</p>
           <img src="images/Path Copy 5.png" alt="..." class="q-and-a__down-arrow ml-auto">
@@ -312,6 +327,7 @@
           </div>
           </div>
   </section>
+
 <section class="agile d-flex mt-1 px-2 ml-66 flex-left ">  
      <div ><h2 style="color:#22B78E;font-family: StagSans;font-size: 31pxpx; letter-spacing: 1.28px;line-height: 40px;text-align: left;">
       Testimonials
@@ -319,74 +335,80 @@
      <p style="color: #000000; width: 609px;font-family: StagSans;">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p> 
     </div>          
   </section >
+
+ <section>
+   <div class="sliderCom">
+    <button class="slider__btn slider__btn--left">&larr;</button>
+    <button class="slider__btn slider__btn--right">&rarr;</button>
+   </div>
+
+ </section>
  
-
-<section class="flex-center mt-10 ml-89 ">
-<div class="card-deck ml-70">
-<div class="card">
+<section class="flex-center mt-10">
+<div class="slider">
+<div class="card1 " id="slide1">
   <div class="row">
     <div class="col-md-2">
-      <img src="images/Bitmap.png" class="card-img" alt="...">
+      <img src="images/Bitmap.png" class="card-img" alt="..." width="50px" height="80px">
     </div>
-    <div class="col-md-7">
+    <div class="col-md-5">
       <div class="card-body">
         <h5 class="card-title">John Doe</h5>
         <p class="card-text">Softwere Engineer</p>
       </div>
     </div>   
     <div class="col-md-2">
-      <img src="images/”.png" class="card-img" alt="...">
+      <img src="images/”.png" class="card-img" alt="..." width="20px" height="40px">
     </div>
     <div class="row">
       <div class="col-md-1"></div>
-    <div class="col-md-10">
+    <div class="col-md-8">
       <small class="text1">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </small>
     </div>
     <div class="col-md-1"></div>
   </div>
 </div>
 </div>
-
-<div class="card">
+<div class="card1 " id="slide2">
   <div class="row">
     <div class="col-md-2">
-      <img src="images/Bitmap.png" class="card-img" alt="...">
+      <img src="images/Bitmap.png" class="card-img" alt="..."width="30px" height="50px">
     </div>
-    <div class="col-md-7">
+    <div class="col-md-3">
       <div class="card-body">
         <h5 class="card-title">John Doe</h5>
         <p class="card-text">Softwere Engineer</p>
       </div>
     </div>   
     <div class="col-md-2">
-      <img src="images/”.png" class="card-img" alt="...">
+      <img src="images/”.png" class="card-img" alt="..." width="10px" height="30px">
     </div>
     <div class="row">
       <div class="col-md-1"></div>
-    <div class="col-md-10">
+    <div class="col-md-8">
       <small class="text1">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </small>
     </div>
     <div class="col-md-1"></div>
   </div>
 </div>
 </div>
-<div class="card">
+<div class="card1 " id="slide3">
   <div class="row">
     <div class="col-md-2">
-      <img src="images/Bitmap.png" class="card-img" alt="...">
+      <img src="images/Bitmap.png" class="card-img" alt="..." width="50px" height="80px">
     </div>
-    <div class="col-md-7">
+    <div class="col-md-4">
       <div class="card-body">
         <h5 class="card-title">John Doe</h5>
         <p class="card-text">Softwere Engineer</p>
       </div>
     </div>   
-    <div class="col-md-2">
-      <img src="images/”.png" class="card-img" alt="...">
+    <div class="col-md-1">
+      <img src="images/”.png" class="card-img" alt="..." width="30px" height="60px">
     </div>
     <div class="row">
       <div class="col-md-1"></div>
-    <div class="col-md-10">
+    <div class="col-md-8">
       <small class="text1">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </small>
     </div>
     <div class="col-md-1"></div>
@@ -395,7 +417,7 @@
 </div>
 </div>
   </section>
-<section class=" agile d-flex mt-10 m-30 bg-white flex-center">
+<section class="Book d-flex mt-1 m-3 bg-white flex-center" >
   <button type="button" class="btn btn-primary btn-lg active ">Book An Appoinment</button>
   </section>
     <!-- Q&A seciton end -->
@@ -424,4 +446,5 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src='https://www.google.com/recaptcha/api.js'></script>
+<script src="index.js"></script>
 </html>
