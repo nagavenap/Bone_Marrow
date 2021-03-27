@@ -205,12 +205,6 @@
   right: 8%;
   transform: translate(50%, -50%);
 }
-/* .sliderCom {
-  margin-right: 90px;
-  margin-top: -100px;
-  padding: 2%;
-  float: right;
-} */
 #slide1 {
   transform: translateX(0%);
   width: 80rem;
@@ -249,7 +243,6 @@
   display: flex;
   align-items: left;
   justify-content: left;
-  /* padding: 20px; */
   /* THIS creates the animation! */
   transition: transform 1s;
 }

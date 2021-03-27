@@ -1,5 +1,3 @@
-//doctors
-
 //hide and show
 function hideContent() {
   var content1 = document.getElementById("content1");
@@ -65,14 +63,15 @@ const slider = function () {
 };
 slider();
 
+//doctors
 let doctors = [
   {
     titile: "Pediatric BMT",
     name: "Dr. Vijay Agarwal",
     decription: " Lead & Sr. Consultant - Medical Oncology & Haematology",
     info: `Dr. Vijay Agarwal is a Senior Consultant Medical Oncologist with 
-        over 12 years of experience in Oncology. Dr. Agarwal has been
-        practising Medical Oncology since 2004.`,
+          over 12 years of experience in Oncology. Dr. Agarwal has been
+          practising Medical Oncology since 2004.`,
     image: `images/doctor.png`,
   },
   {
@@ -80,36 +79,35 @@ let doctors = [
     name: "Dr. Vijay Agarwal",
     decription: " Lead & Sr. Consultant - Medical Oncology & Haematology",
     info: `Dr. Vijay Agarwal is a Senior Consultant Medical Oncologist with 
-        over 12 years of experience in Oncology. Dr. Agarwal has been
-        practising Medical Oncology since 2004.`,
+         over 12 years of experience in Oncology. Dr. Agarwal has been
+         practising Medical Oncology since 2004.`,
     image: `images/doctor.png`,
   },
   {
     name: "Dr. Vijay Agarwal",
     decription: " Lead & Sr. Consultant - Medical Oncology & Haematology",
     info: `Dr. Vijay Agarwal is a Senior Consultant Medical Oncologist with 
-        over 12 years of experience in Oncology. Dr. Agarwal has been
-        practising Medical Oncology since 2004.`,
+            over 12 years of experience in Oncology. Dr. Agarwal has been
+            practising Medical Oncology since 2004.`,
     image: `images/doctor.png`,
   },
   {
     name: "Dr. Vijay Agarwal",
     decription: " Lead & Sr. Consultant - Medical Oncology & Haematology",
     info: `Dr. Vijay Agarwal is a Senior Consultant Medical Oncologist with 
-        over 12 years of experience in Oncology. Dr. Agarwal has been
-        practising Medical Oncology since 2004.`,
+            over 12 years of experience in Oncology. Dr. Agarwal has been
+            practising Medical Oncology since 2004.`,
     image: `images/doctor.png`,
   },
 ];
 
 for (let i = 0; i < doctors.length; i++) {
   const div = document.createElement("div");
-  //   div.className = "row";
-  if (doctors[i].titile) {
-    div.innerHTML = `
-     <div class="agile d-flex m-10  flex-center " style="color: #22B78E;font-family: StagSans;font-size:24px;text-align: center;"> 
-        <h2 >${doctors[i].titile}</h2> 
-      </div>
+
+  div.innerHTML = `
+   <div class="agile d-flex m-10  flex-center " style="color: #22B78E;font-family: StagSans;font-size:24px;text-align: center;">
+        <h2 >${doctors[i].titile ? doctors[i].titile : ""}</h2>
+     </div> 
     <img src=${doctors[i].image} alt="Bitmap_image">
      <p style=" color: #1D5AA6;font-size: 22px;">${doctors[i].name}</p>
      <p class="agile__milestone__box__description font-green text-center lh-lg mt-1" style="color: #1D5AA6;font-size: 12px;letter-spacing: 1.2px;text-align: center;">MD, MRCP, PhD,CCT<br>
@@ -119,18 +117,6 @@ for (let i = 0; i < doctors.length; i++) {
      </p>
      <button class="btn btn-lg" style="background: radial-gradient( #17EAD9 0%, #6078EA 100%);border-radius: 4px;color: white;text-align: center;padding: 1%;">Know More</button> 
      `;
-  } else {
-    div.innerHTML = `
-    <img src=${doctors[i].image} alt="Bitmap_image">
-     <p style=" color: #1D5AA6;font-size: 22px;">${doctors[i].name}</p>
-     <p class="agile__milestone__box__description font-green text-center lh-lg mt-1" style="color: #1D5AA6;font-size: 12px;letter-spacing: 1.2px;text-align: center;">MD, MRCP, PhD,CCT<br>
-     ${doctors[i].decription}</p>                     
-     <p class="agile__milestone__box__description  text-center lh-lg  mt-10" style="font-size:15px;font-family: StagSans;text-align: center;line-height: 20px;">
-     ${doctors[i].info}
-     </p>
-     <button class="btn btn-lg" style="background: radial-gradient( #17EAD9 0%, #6078EA 100%);border-radius: 4px;color: white;text-align: center;padding: 1%;">Know More</button> 
-     `;
-  }
 
   document.getElementById("doctorContent").appendChild(div);
 }
